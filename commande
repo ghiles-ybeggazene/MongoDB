@@ -13,3 +13,9 @@ $ db.formations.insert({.....})      inserer un objet a la collections formation
 $ db.formations.find()               pour voir les données de la collection 
 
 $ db.stats()                        pour voir les informations de la base de donnée 
+
+$ db.formations.stats()             pour voir les informations de la collection 
+
+$ db.formations.drop()              pour supprimer la collection 
+
+$ db.dropDatabase()                 pour supprimer la base de donnée 
