@@ -24,4 +24,16 @@ $ db.formations.findOne()           nous permet de recuper un seul document de l
 
 $ db.formations.save({.....})       pour faire une modification
 
-$ db.formations.remove({"_id":"sds"})
+$ db.formations.remove({"_id":"sds"})    pour supprimer le document 
+
+$ db.formations.update( {......}  , { $unset:  {.....}  })   pour la mise a jour 
+
+$db.formations.find().limit(1)       nous retourne un document de la collections 
+
+$db.formations.find().sort({ville:1})     nous retourne les donnees trier par rapport ville 
+
+$db.formations.find( {filtre slection} , {projection} ).sort( {..tri..})   requete de mongoDB
+
+$db.formations.find( {"ville":"75"} , {titre:1, name:1} ).sort( {name:1})
+
+
