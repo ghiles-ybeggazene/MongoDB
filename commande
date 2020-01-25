@@ -36,4 +36,27 @@ $db.formations.find( {filtre slection} , {projection} ).sort( {..tri..})   reque
 
 $db.formations.find( {"ville":"75"} , {titre:1, name:1} ).sort( {name:1})
 
+$db.formations.count()           nous retourne le nombre de document dans la collection 
+
+$db.formations.find( { $or: [ {....}, {..} ] } )    recherche par un or  un  ou 
+
+$db.formations.ensureIndex( {ville:1})       creation d index pour la collection
+
+$db.formations.copyTo("foramtions_copie")      pour copier ma collection
+
+$db.formations.esureIndex( {"ville":"2d"})         index spatiale pour les point geographiques
+
+$$db.formations.find({loc:  {$nearSphere: [-74,48] }})      pour donner les point à proximité 
+
+
+
+
+
+
+
+
+
+
+
+
 
