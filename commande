@@ -1,0 +1,9 @@
+$  show  dbs          pour voir les bases de données   
+
+$  db                 pour voir la base de données ou on se situe 
+
+$ use <nom de db>     pour aller a la base de donnée  si elle exite pas il la crée 
+
+$ show collections    pour voir les collections de la base de donnée 
+
+$ exit                pour quitté mongoDB   
