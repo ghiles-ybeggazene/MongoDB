@@ -19,3 +19,9 @@ $ db.formations.stats()             pour voir les informations de la collection
 $ db.formations.drop()              pour supprimer la collection 
 
 $ db.dropDatabase()                 pour supprimer la base de donnée 
+
+$ db.formations.findOne()           nous permet de recuper un seul document de la collection 
+
+$ db.formations.save({.....})       pour faire une modification
+
+$ db.formations.remove({"_id":"sds"})
