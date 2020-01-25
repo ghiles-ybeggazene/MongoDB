@@ -7,3 +7,9 @@ $ use <nom de db>     pour aller a la base de donnée  si elle exite pas il la c
 $ show collections    pour voir les collections de la base de donnée 
 
 $ exit                pour quitté mongoDB   
+
+$ db.formations.insert({.....})      inserer un objet a la collections formations
+
+$ db.formations.find()               pour voir les données de la collection 
+
+$ db.stats()                        pour voir les informations de la base de donnée 
