@@ -48,15 +48,3 @@ $db.formations.esureIndex( {"ville":"2d"})         index spatiale pour les point
 
 $$db.formations.find({loc:  {$nearSphere: [-74,48] }})      pour donner les point à proximité 
 
-
-
-
-
-
-
-
-
-
-
-
-
