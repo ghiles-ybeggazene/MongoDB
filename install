@@ -1,0 +1,8 @@
+
+copier le C:\Program Files\MongoDB\Server\4.2\bin  sur variable d'environement path ajouter \data\d
+
+$md c:\data\d
+
+$mongod       pour lancer  le service   mongodb
+
+$mongo        shell de mongodb  
