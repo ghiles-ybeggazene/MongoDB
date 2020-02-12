@@ -1,0 +1,22 @@
+
+je vais utiliser le docker-compose  pour configurer mon sharding 
+
+
+$ docker exec -it mongo-shared-c1 /bin/bash
+
+$mongo
+
+initialiation  du jeu de replication 
+>rs.initiate({_id : "rs1conf", members: [{ _id : 0, host : "mongo-shard-c1" },  { _id : 1, host : "mongo-shard-c2" }, 
+{ _id : 2, host : "mongo-shard-c3" }]})
+
+aller sur le conteneur de mongos
+
+> sh.addShard("mongo-shard-1:27017")
+> sh.addShard("mongo-shard-2:27017")
+
+>sh.status()
+
+pour sharder une base de données 
+
+>sh.enableSharding("database")
