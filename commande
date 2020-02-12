@@ -46,5 +46,7 @@ $db.formations.copyTo("foramtions_copie")      pour copier ma collection
 
 $db.formations.esureIndex( {"ville":"2d"})         index spatiale pour les point geographiques
 
-$$db.formations.find({loc:  {$nearSphere: [-74,48] }})      pour donner les point à proximité 
+$db.formations.find({loc:  {$nearSphere: [-74,48] }})      pour donner les point à proximité 
+
+$db.formations.find( {"grades.scores": {$lt: 30} } )      pour retourner les formations ou le score < 30 
 
