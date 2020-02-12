@@ -1,0 +1,37 @@
+
+ le premier conteneur
+
+$ docker run -d --name mongo-rs-1   -i -t mongo --replSet rs1 --noprealloc --smallfiles
+
+ le deuxieme conteneur 
+
+$ docker run -d  --name mongo-rs-2   -i -t mongo --replSet rs1 --noprealloc --smallfiles
+
+ le deuxieme conteneur 
+
+$ docker run -d  --name mongo-rs-3   -i -t mongo --replSet rs1 --noprealloc --smallfiles
+
+
+pour voir l'adresse ip des 3 conteneurs mongo 
+
+$ docker inspect --format '{{ .NetworkSettings.IPAdress }}' mongo-rs-1
+
+$ docker inspect --format '{{ .NetworkSettings.IPAdress }}' mongo-rs-2
+
+$ docker inspect --format '{{ .NetworkSettings.IPAdress }}' mongo-rs-3
+
+
+  pour  executer une commande a l'interieur du conteneur 
+  
+  $ docker exec -it mongo-rs-1 /bin/bash
+  
+  > config = {_id: 'rs1', members: [
+  ...                {_id:0, host: '172......:27017},
+  ...                {_id:1, host: '172......:27017},
+  ...                {_id:2, host: '172......:27017}]
+  ...};
+  
+  > rs.initiate(config)
+  
+  >mongo
+  
