@@ -15,3 +15,6 @@ Model.findOneAndUpdate()
 Model.replaceOne()
 Model.updateMany()
 Model.updateOne()
+
+
+Model.countDocuments(query)
