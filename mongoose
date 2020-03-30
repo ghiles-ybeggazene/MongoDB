@@ -17,4 +17,4 @@ Model.updateMany()
 Model.updateOne()
 
 
-Model.countDocuments(query)
+Model.countDocuments(query, query)
