@@ -1,7 +1,22 @@
 requete de mongoose
 
+Model()
+Model.aggregate()
+Model.bulkWrite()
+Model.cleanIndexes()
+Model.count()
+Model.countDocuments()
+Model.create()
+Model.createCollection()
+Model.createIndexes()
 Model.deleteMany()
 Model.deleteOne()
+Model.discriminator()
+Model.distinct()
+Model.ensureIndexes()
+Model.estimatedDocumentCount()
+Model.events
+Model.exists()
 Model.find()
 Model.findById()
 Model.findByIdAndDelete()
@@ -12,9 +27,40 @@ Model.findOneAndDelete()
 Model.findOneAndRemove()
 Model.findOneAndReplace()
 Model.findOneAndUpdate()
+Model.geoSearch()
+Model.hydrate()
+Model.init()
+Model.insertMany()
+Model.inspect()
+Model.listIndexes()
+Model.mapReduce()
+Model.populate()
+Model.prototype.$where
+Model.prototype.$where()
+Model.prototype.base
+Model.prototype.baseModelName
+Model.prototype.collection
+Model.prototype.db
+Model.prototype.delete
+Model.prototype.deleteOne()
+Model.prototype.discriminators
+Model.prototype.increment()
+Model.prototype.model()
+Model.prototype.modelName
+Model.prototype.remove()
+Model.prototype.save()
+Model.prototype.schema
+Model.remove()
 Model.replaceOne()
+Model.startSession()
+Model.syncIndexes()
+Model.translateAliases()
+Model.update()
 Model.updateMany()
 Model.updateOne()
+Model.validate()
+Model.watch()
+Model.where()
 
 
 Model.countDocuments(query, query)
