@@ -6,3 +6,20 @@ db.restaurants.createIndex( { "cuisine": 1 } )
 
 
 le framework d'agregation 
+
+
+
+
+ db.admin.update( {}, { $set:{ "gains" : "70% de réduction" } }, { multi : true } );
+
+ db.admin.update( {}, { $set:{ "date_expired" : "2020-10-30T00:00:00.000Z" } }, { multi : true } );
+
+ db.admin.update({},{ $rename: {"client" : "isServed" } }, {multi:true});
+
+ db.admin.update( {}, {$unset: {date_used:1} }, { multi : true } );
+
+ db.admin.update( {}, { $set:{ "isUsed" : false } }, { multi : true } );
+
+ db.admin.update( {}, { $set:{ "isServed" : false } }, { multi : true } );
+
+ db.admin.remove( { index : { $gt: 59999 } } )
