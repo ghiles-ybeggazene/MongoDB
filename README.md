@@ -2,9 +2,9 @@
 
 -Connect db
 $ mongo
-> use admin
+ use admin
 switched to db admin
-> db.auth('admin','SECRETPASSWORD');
+ db.auth('admin','SECRETPASSWORD');
 
 -create user
  db.createUser(
