@@ -1,9 +1,8 @@
 # MongoDB
 
 ## Connect db
-- mongo
+- connect to mongo
  * ` use admin `
-switched to db admin
 * ` db.auth('admin','SECRETPASSWORD') `
 
 - create user
