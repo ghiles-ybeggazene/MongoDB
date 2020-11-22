@@ -1,8 +1,8 @@
 # MongoDB
 
 ## Connect db
--- mongo
- use admin
+- mongo
+ * ` use admin `
 switched to db admin
 * ` db.auth('admin','SECRETPASSWORD') `
 
