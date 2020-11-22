@@ -12,3 +12,5 @@
      roles: [{role: "dbOwner", db: "db_name"} ]
    }
  ) `
+ 
+### connect to mongo
