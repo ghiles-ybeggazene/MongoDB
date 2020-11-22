@@ -13,4 +13,5 @@
    }
  ) `
  
-### connect to mongo
+### show dbs
+* ` show dbs `
