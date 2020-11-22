@@ -4,7 +4,7 @@
  * ` use admin `
 * ` db.auth('admin','SECRETPASSWORD') `
 
-- create user
+### create user
 * ` db.createUser(
    {
      user: "mongodb",
