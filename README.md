@@ -1,12 +1,12 @@
 # MongoDB
 
--Connect db
+- Connect db
 $ mongo
  use admin
 switched to db admin
  db.auth('admin','SECRETPASSWORD');
 
--create user
+- create user
  db.createUser(
    {
      user: "mongodb",
