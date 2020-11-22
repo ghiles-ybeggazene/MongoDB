@@ -16,5 +16,5 @@
 ### show dbs
 * ` show dbs `
 
-
- mongoexport --host localhost --port 27017 -u admin -p password --db ocpp --collection ipmappings --type=json --out /home/gybeggazene/ipmappings.json --fields all_the_fields --authenticationDatabase admin
+### export collection from db
+ * ` mongoexport --host localhost --port 27017 -u admin -p password --db ocpp --collection ipmappings --type=json --out /home/gybeggazene/ipmappings.json --fields all_the_fields --authenticationDatabase admin `
