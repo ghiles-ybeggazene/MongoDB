@@ -3,6 +3,8 @@
 ### connect to mongo
  * ` use admin `
 * ` db.auth('admin','SECRETPASSWORD') `
+* `mongo -u admin -p XaWBY2r5RNEu4uJp `
+
 
 ### create user
 * ` db.createUser(
