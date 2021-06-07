@@ -20,3 +20,9 @@
 
 ### export collection from db
  * ` mongoexport --host localhost --port 27017 -u admin -p password --db ocpp --collection ipmappings --type=json --out /home/gybeggazene/ipmappings.json --fields all_the_fields --authenticationDatabase admin `
+
+### filter data with date from db
+* ` db.getCollection('evses').find({  created_at: {
+        $gte: ISODate("2010-04-29T00:00:00.000Z"),
+        $lt: ISODate("2010-05-01T00:00:00.000Z")
+    } }) `
