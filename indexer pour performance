@@ -1,6 +1,11 @@
 
 db.restaurants.createIndex( { "cuisine": 1 } )    
 
+
+db.products.createIndex( { "item": 1, "stock": 1 } ) 
+
+
+
 { "cuisine": 1 }  pour des recherches 
 { "cuisine": -1 }  pour des sorts
 
